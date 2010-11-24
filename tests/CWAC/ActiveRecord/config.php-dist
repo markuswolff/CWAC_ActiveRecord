@@ -1,0 +1,19 @@
+<?php
+define('MYSQL_BIN_PATH', '/opt/lampp/bin/');
+
+$ARConfig = array('connections' => array(
+                                         'default' => array(
+                                                            'dsn' => 'mysql:host=localhost;dbname=test_books',
+                                                            'user' => 'root',
+                                                            'password' => null
+                                                           )
+                                        ),
+                  'model_path' => dirname(__FILE__).'/model/'
+                 );
+                 
+$inc_path = get_include_path();
+set_include_path($inc_path.':../../library/');
+
+require_once 'CWAC/ActiveRecord.php';
+CWAC_ActiveRecord::setConfig($ARConfig);
+?>
