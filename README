@@ -1,0 +1,27 @@
+CWAC_ActiveRecord
+
+This is a very simple implementation of the ActiveRecord pattern for PHP5.
+It is currently tested with MySQL and at least two parties use it actively
+in production systems. It is designed for speed and ease of use, not academic
+purity.
+
+The main codebase is from 2007 and not really actively maintained (it works
+for the involved parties). If anything, expect only tiny bugfixes. Yes, there
+some small bugs that are so far considered non-critical. One fine day, someone
+might do something about them. Or not. We'll see.
+
+ActiveRecord is suitable if you need something that's very simple and quick
+to setup, and does not waste too much memory and CPU cycles on abstraction
+where you need none.
+
+For everything else, go and use Propel or Doctrine2. If you have never used
+ActiveRecord or any other kind of database access layer, go and use Propel
+or Doctrine2. The ActiveRecord pattern can lead to dangerous coding style
+when used improperly. It can also make you blind, deaf and/or sterile.
+If you're looking for something that's actively maintained, go use Propel
+or Doctrine2. Got the message? :-)
+
+Written by Markus Wolff (markus <at> wolff-hamburg <dot> de) in 2007
+Licensed under the New BSD License.
+
+Disclaimer: This code may eat your children. You have been warned.
